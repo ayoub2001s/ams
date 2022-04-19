@@ -1,0 +1,14 @@
+<meta charset="utf-8" />
+<link rel="stylesheet" th:href="@{/css/bootstrap.css}" />
+<link rel="stylesheet" th:href="@{/css/style.css}" />
+<h1 align="center">Formulaire d'ajout d'un nouvel étudiant</h1>
+
+<form method="POST" th:action="@{/etudiant/add}" th:object="${etudiant}">
+
+Nom : <input type="text"  th:field=*{nom}/>
+Email : <input type="text"  th:field=*{email}/>
+Age : <input type="text" th:field=*{age} />
+
+<input type="submit" value="Ajouter" class="btn btn-success"/>
+
+</form>

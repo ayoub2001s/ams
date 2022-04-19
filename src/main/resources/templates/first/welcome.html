@@ -1,0 +1,11 @@
+<meta charset="utf-8"/>
+<h1 align="center">Ma première View Thymleaf</h1>
+
+<h3 th:text="${name}">Salah</h3>
+<h3 th:text="${fnt}">Ing</h3>
+
+<h4 align="center">Liste des formations</h4>
+
+<ul>
+<li th:each="c : ${cours}" th:text="${c}"></li>
+</ul>
